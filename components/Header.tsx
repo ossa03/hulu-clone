@@ -12,7 +12,7 @@ import {
 
 const Header: FC = () => {
 	return (
-		<header className='flex flex-col items-center justify-between h-auto m-5 sm:flex-row'>
+		<header className='flex flex-col items-center justify-between h-auto m-5 sm:flex-row sm:mr-10'>
 			<div className='flex flex-grow max-w-2xl justify-evenly'>
 				<HeaderItem title='HOME' Icon={HomeIcon} />
 				<HeaderItem title='TRENDING' Icon={LightningBoltIcon} />
@@ -21,7 +21,7 @@ const Header: FC = () => {
 				<HeaderItem title='SEARCH' Icon={SearchIcon} />
 				<HeaderItem title='ACCOUNT' Icon={UserIcon} />
 			</div>
-			<Image className='object-contain ' src={'/hulu.svg'} width={200} height={100} />
+			<Image className='object-contain' src={'/hulu.svg'} width={200} height={100} />
 		</header>
 	)
 }
