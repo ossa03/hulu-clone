@@ -34,8 +34,10 @@ export default Home
 export const getServerSideProps: GetServerSideProps = async (context) => {
 	const genre = getAsString(context.query.genre)
 
+	const request_url = requests[genre]?.url || requests.fetchTrending.url
+
 	// `/discover/movie?api_key=${TMDB_API_KEY}&language=ja&sort_by=popularity.desc&with_genres=1365`
-	const res = await axios.get(`https://api.themoviedb.org/3${requests[genre]?.url || requests.fetchTrending.url}`)
+	const res = await axios.get(`https://api.themoviedb.org/3${request_url}`)
 	const results: Result[] = res.data.results
 
 	if (!results) {

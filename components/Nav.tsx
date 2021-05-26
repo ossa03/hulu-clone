@@ -18,7 +18,7 @@ const Nav: FC = () => {
 							'cursor-pointer transform transition duration-100 hover:scale-125 active:text-red-500 hover:text-white last:pr-24'
 						}
 						key={key}
-						onClick={() => router.push(`/genre=${key}`)}
+						onClick={() => router.push(`/?genre=${key}`)}
 					>
 						{title}
 					</h2>

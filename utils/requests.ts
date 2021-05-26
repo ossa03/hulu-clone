@@ -22,7 +22,7 @@ export const requests: Request = {
 	},
 	fetchActionMovies: {
 		title: 'Action',
-		url: `/discover/movie?api_key=${TMDB_API_KEY}&language=ja&sort_by=popularity.desc&with_genres=1365`,
+		url: `/discover/movie?api_key=${TMDB_API_KEY}&language=ja&sort_by=popularity.desc&with_genres=28`,
 	},
 	fetchComedyMovies: {
 		title: 'Comedy',
