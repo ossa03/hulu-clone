@@ -1,9 +1,16 @@
 const TMDB_API_KEY = process.env.TMDB_API_KEY
 
-// base url
-// https://api.themoviedb.org/3
+export type Request = {
+	[key: string]: {
+		title: string
+		url: string
+	}
+}
 
-export default {
+// base url
+// https://api.themoviedb.org/3/
+
+export const requests: Request = {
 	// https://api.themoviedb.org/3/movie/550?api_key=0b366f064b15d1f50807c42e647a8f7a
 	fetchTrending: {
 		title: 'Trending',

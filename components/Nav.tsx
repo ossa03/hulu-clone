@@ -1,6 +1,6 @@
 import { useRouter } from 'next/dist/client/router'
 import { FC } from 'react'
-import requests from '../utils/requests'
+import { requests } from '../utils/requests'
 
 const Nav: FC = () => {
 	const router = useRouter()
@@ -15,7 +15,7 @@ const Nav: FC = () => {
 				{Object.entries(requests).map(([key, { title, url }]) => (
 					<h2
 						className={
-							'cursor-pointer transform transition duration-100 hover:scale-125 active:text-red-500 hover:text-white'
+							'cursor-pointer transform transition duration-100 hover:scale-125 active:text-red-500 hover:text-white last:pr-24'
 						}
 						key={key}
 						onClick={() => router.push(`/genre=${key}`)}
