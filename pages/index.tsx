@@ -1,20 +1,18 @@
 import Head from 'next/head'
 import { FC } from 'react'
 import Header from '../components/Header'
+import Nav from '../components/Nav'
 
 const Home: FC = () => {
 	return (
 		<div>
 			<Head>
-				<title>Hulu clone</title>
+				<title>Hulu 2.0</title>
 			</Head>
 
-			{/* Header */}
 			<Header />
-
-			{/* Nav */}
-
-			{/* Results */}
+			<Nav />
+			{/* Result s */}
 		</div>
 	)
 }

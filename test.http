@@ -1,0 +1,1 @@
+GET https://api.themoviedb.org/3/trending/movie/week?api_key=0b366f064b15d1f50807c42e647a8f7a&language=ja
