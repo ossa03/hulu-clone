@@ -8,7 +8,7 @@ type Props = {
 	result: Result
 }
 
-const Thumbnail: FC<Props> = forwardRef(({ result }, ref) => {
+const Thumbnail: FC<Props> = forwardRef<HTMLDivElement, Props>(({ result }, ref) => {
 	const baseUrl = 'https://image.tmdb.org/t/p/original/'
 
 	return (
